@@ -308,11 +308,12 @@ consultado directa o abiertamente.
 # Módulo I: Introducción
 
 ::: nonincremental
--   Variables
--   Medidas de tendencia central
--   Medidas de dispersión
--   Gráficas
--   Software de análisis estadístico
+- Variables
+- Medidas de tendencia central
+- Medidas de forma
+- Gráficos
+- Software para análisis estadístico
+
 :::
 
 ## Variables
@@ -1253,25 +1254,24 @@ link <- ""
 
 ## Probabilidad
 
-# Módulo II: Variables aleatorias
+# Módulo II: Probabilidad
 
 ::: nonincremental
--   Funciones de distribución y funciones de probabilidad
--   Distribuciones discretas
--   Distribuciones continuas
--   Esperanza matemática
+- Teoría de conjuntos
+- Principios fundamentales del conteo
+- Probabilidad
+- Funciones de distribución y funciones de probabilidad
+- Distribuciones discretas
+- Distribuciones continuas
 :::
 
-# Módulo III: Inferencia
+# Módulo III: Business Intelligence
 
 ::: nonincremental
--   Estimación de una y dos muestras
--   Pruebas de hipótesis de una y dos muestras
+- Introducción
+- Arquitectura y componentes de BI
+- Modelamiento de datos para BI
+- ETL
+- KPIs, OKRs y métricas de negocio
 :::
 
-# Módulo IV: Regresión y muestreo
-
-::: nonincremental
--   Modelos de regresión
--   Muestreo
-:::
