@@ -64,6 +64,7 @@ include-after-body: add-custom-footer.html
 editor: 
   markdown: 
     wrap: 72
+default-image-alignment: center
 ---
 
 ```{r include=FALSE}
@@ -618,7 +619,7 @@ los datos. Los cuantiles se dividen en cuartiles, deciles y percentiles.
 
 #### Percentiles
 
-El percentil es un valor tal que el **P** por ciente de las
+El percentil es un valor tal que el **P** por ciento de las
 observaciones son menores a tal valor.
 
 **Ejemplo:** suponga que la nota del parcial es 4.1 y esa nota
@@ -702,6 +703,10 @@ $Hi = \text{Frecuencia relativa acumulada}$
 :::
 :::
 
+## Cálculo de Marca de clase
+
+![](0_Figures/1_MarcaClase.png)
+
 ## Cálculos sobre datos agrupados
 
 ::: small-text
@@ -741,6 +746,212 @@ V(X) = \sum_{i=1}^m \frac{(Mc_{i} - \bar{X})^2*f_{i}}{n-1}
 -   Diagrama circular (pie chart)
 -   Diagrama de cajas / Diagrama de caja y bigotes (boxplot)
 :::
+
+## Gráficas
+
+![](0_Figures/1_TiposGraficos.png){height="30%"}
+Tomado de https://biuwer.com/es/blog/como-elegir-el-grafico-adecuado-para-tus-datos/
+
+## Gráficas
+
+![](0_Figures/1_TiposGraficos1.png)
+
+Adaptado de https://biuwer.com/es/blog/como-elegir-el-grafico-adecuado-para-tus-datos/
+
+## Gráficas
+
+![](0_Figures/1_TiposGraficos2.png)
+
+::: smaller-text
+Adaptado de https://biuwer.com/es/blog/como-elegir-el-grafico-adecuado-para-tus-datos/
+:::
+
+## Gráficas
+
+![](0_Figures/1_TiposGraficos3.png)
+
+::: smaller-text
+Adaptado de https://biuwer.com/es/blog/como-elegir-el-grafico-adecuado-para-tus-datos/
+:::
+
+## Gráficas
+
+![](0_Figures/1_TiposGraficos4.png)
+
+::: smaller-text
+Adaptado de https://biuwer.com/es/blog/como-elegir-el-grafico-adecuado-para-tus-datos/
+:::
+
+## Gráficas
+
+![](0_Figures/1_TiposGraficos5.png)
+
+::: smaller-text
+Adaptado de https://biuwer.com/es/blog/como-elegir-el-grafico-adecuado-para-tus-datos/
+:::
+
+## Gráficas - Amounts
+
+![](0_Figures/1_TiposGraficos6.png)
+
+::: smaller-text
+Tomado de Fundamentals of Data Visualization, Wilke (2019)
+:::
+
+## Gráficas - Amounts
+
+![](0_Figures/1_TiposGraficos7.png)
+
+::: smaller-text
+Tomado de Fundamentals of Data Visualization, Wilke (2019)
+:::
+
+## Gráficas - Distributions
+
+![](0_Figures/1_TiposGraficos8.png)
+
+::: smaller-text
+Tomado de Fundamentals of Data Visualization, Wilke (2019)
+:::
+
+## Gráficas - Distributions
+
+![](0_Figures/1_TiposGraficos9.png)
+
+::: smaller-text
+Tomado de Fundamentals of Data Visualization, Wilke (2019)
+:::
+
+## Gráficas - Proportions
+
+![](0_Figures/1_TiposGraficos10.png)
+
+::: smaller-text
+Tomado de Fundamentals of Data Visualization, Wilke (2019)
+:::
+
+## Gráficas - Proportions
+
+![](0_Figures/1_TiposGraficos11.png)
+
+::: smaller-text
+Tomado de Fundamentals of Data Visualization, Wilke (2019)
+:::
+
+## Gráficas - Proportions
+
+![](0_Figures/1_TiposGraficos12.png)
+
+::: smaller-text
+Tomado de Fundamentals of Data Visualization, Wilke (2019)
+:::
+
+## Gráficas - x–y relationships
+
+![](0_Figures/1_TiposGraficos13.png)
+
+::: smaller-text
+Tomado de Fundamentals of Data Visualization, Wilke (2019)
+:::
+
+## Gráficas - x–y relationships
+
+![](0_Figures/1_TiposGraficos14.png)
+
+::: smaller-text
+Tomado de Fundamentals of Data Visualization, Wilke (2019)
+:::
+
+## Gráficas - x–y relationships
+
+![](0_Figures/1_TiposGraficos15.png)
+
+::: smaller-text
+Tomado de Fundamentals of Data Visualization, Wilke (2019)
+:::
+
+## Gráficas - Geospatial Data
+
+![](0_Figures/1_TiposGraficos16.png)
+
+::: smaller-text
+Tomado de Fundamentals of Data Visualization, Wilke (2019)
+:::
+
+## Gráficas - Uncertainty
+
+![](0_Figures/1_TiposGraficos17.png)
+
+::: smaller-text
+Tomado de Fundamentals of Data Visualization, Wilke (2019)
+:::
+
+## Gráficas - Uncertainty
+
+![](0_Figures/1_TiposGraficos18.png)
+
+::: smaller-text
+Tomado de Fundamentals of Data Visualization, Wilke (2019)
+:::
+
+## Gráficas - Uncertainty
+
+![](0_Figures/1_TiposGraficos19.png)
+
+::: smaller-text
+Tomado de Fundamentals of Data Visualization, Wilke (2019)
+:::
+
+## Libros de Dataviz recomendados
+
+::: columns
+::: {.column width="50%"}
+<img src="0_Figures/1_TiposGraficos20.png" style="height: 75vh; width: auto;">
+:::
+
+::: {.column width="50%"}
+<img src="0_Figures/1_TiposGraficos21.png" style="height: 75vh; width: auto;">
+:::
+:::
+
+## Páginas de paletas de colores recomendadas
+
+::: columns
+::: {.column width="50%"}
+<a href="https://coolors.co/palettes/trending" target="_blank">
+  <img src="0_Figures/1_TiposGraficos22.png" style="height: auto; width: auto;">
+</a>
+:::
+
+::: {.column width="50%"}
+<a href="https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3" target="_blank">
+  <img src="0_Figures/1_TiposGraficos23.png" style="height: auto; width: auto;">
+</a>
+:::
+:::
+
+## Páginas de gráficos
+
+::: columns
+::: {.column width="50%"}
+**Gráficas en R**
+
+::: nonincremental
+- <a href="https://r-graph-gallery.com/" target="_blank">https://r-graph-gallery.com/</a>
+- <a href="https://r-charts.com/" target="_blank">https://r-charts.com/</a>
+- <a href="https://r-graphics.org/" target="_blank">https://r-graphics.org/</a>
+:::
+:::
+
+::: {.column width="50%"}
+**Gráficas en Python**
+
+::: nonincremental
+- <a href="https://python-graph-gallery.com/" target="_blank">https://python-graph-gallery.com/</a>
+:::
+:::
+:::
+
 
 ## Lenguajes de programación
 
@@ -972,33 +1183,65 @@ df %>%
 
 ![](0_Figures/1_Tidydata1.png)
 
+::: small-text
+Illustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst
+:::
+
 ### Tidydata
 
 ![](0_Figures/1_Tidydata2.png)
+
+::: small-text
+Illustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst
+:::
 
 ### Tidydata
 
 ![](0_Figures/1_Tidydata3.png)
 
+::: small-text
+Illustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst
+:::
+
 ### Tidydata
 
 ![](0_Figures/1_Tidydata4.png)
+
+::: small-text
+Illustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst
+:::
 
 ### Tidydata
 
 ![](0_Figures/1_Tidydata5.png)
 
+::: small-text
+Illustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst
+:::
+
 ### Tidydata
 
 ![](0_Figures/1_Tidydata6.png)
+
+::: small-text
+Illustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst
+:::
 
 ### Informes
 
 ![](0_Figures/1_Quarto1.png)
 
+::: small-text
+Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.
+:::
+
 ### Informes
 
 ![](0_Figures/1_Quarto2.png)
+
+::: small-text
+Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.
+:::
 
 ## Tidyverse
 
@@ -1012,247 +1255,39 @@ df %>%
 
 ![](0_Figures/1_Tidyverse3.png)
 
-## Gráficas
 
-### Distribution
+## Creemos nuestro primer informe automatizado de análisis exploratorio
 
-![](0_Figures/1_FigDistribution.png)
+![](0_Figures/1_Palmer_Penguins1.png){fig-height=5em}
 
-#### Histogram
-
-::: panel-tabset
-### Gráfica
-
-```{r}
-# Cargar librerias
-library(tidyverse)
-
-# Cargar datos
-link <- ""
-```
-
-### Código en R
+::: small-text
+Artwork by @allison_horst
 :::
 
-#### Density
 
-::: panel-tabset
-### Gráfica
 
-### Código en R
+## Conozcamos a los Pingüinos Palmer
+::: columns
+
+::: {.column width="50%"}
+![](0_Figures/1_Palmer_Penguins2.png)  
+
+::: small-text
+Artwork by @allison_horst
+:::
 :::
 
-#### Boxplot
+::: {.column width="50%"}
+![](0_Figures/1_Palmer_Penguins3.png)  
 
-::: panel-tabset
-### Gráfica
-
-### Código en R
+::: small-text
+Artwork by @allison_horst
 :::
 
-#### Ridgeline
-
-::: panel-tabset
-### Gráfica
-
-### Código en R
+:::
 :::
 
-#### Beeswarm
 
-::: panel-tabset
-### Gráfica
-
-### Código en R
-:::
-
-### Ranking
-
-![](0_Figures/1_FigRanking.png)
-
-#### Table
-
-::: panel-tabset
-### Gráfica
-
-### Código en R
-:::
-
-#### Barplot
-
-::: panel-tabset
-### Gráfica
-
-### Código en R
-:::
-
-#### Lollipop
-
-::: panel-tabset
-### Gráfica
-
-### Código en R
-:::
-
-#### Wordcloud
-
-::: panel-tabset
-### Gráfica
-
-### Código en R
-:::
-
-#### Parallel
-
-::: panel-tabset
-### Gráfica
-
-### Código en R
-:::
-
-#### Circular Barplot
-
-::: panel-tabset
-### Gráfica
-
-### Código en R
-:::
-
-### Part of a whole
-
-![](0_Figures/1_FigPartofWhole.png)
-
-#### Pie chart
-
-::: panel-tabset
-### Gráfica
-
-### Código en R
-:::
-
-#### Doughnut
-
-::: panel-tabset
-### Gráfica
-
-### Código en R
-:::
-
-#### Grouped and Stacked barplot
-
-::: panel-tabset
-### Gráfica
-
-### Código en R
-:::
-
-#### Dendrogram
-
-::: panel-tabset
-### Gráfica
-
-### Código en R
-:::
-
-#### Treemap
-
-::: panel-tabset
-### Gráfica
-
-### Código en R
-:::
-
-### Evolution
-
-::: panel-tabset
-### Gráfica
-
-### Código en R
-:::
-
-### Correlation
-
-![](0_Figures/1_FigCorrelation.png)
-
-#### Scatter
-
-::: panel-tabset
-### Gráfica
-
-### Código en R
-:::
-
-#### Connected scatter
-
-::: panel-tabset
-### Gráfica
-
-### Código en R
-:::
-
-#### Heatmap
-
-::: panel-tabset
-### Gráfica
-
-### Código en R
-:::
-
-#### Bubble
-
-::: panel-tabset
-### Gráfica
-
-### Código en R
-:::
-
-### Evolution
-
-![](0_Figures/1_FigEvolution.png)
-
-#### Line plot
-
-::: panel-tabset
-### Gráfica
-
-### Código en R
-:::
-
-#### Area
-
-::: panel-tabset
-### Gráfica
-
-### Código en R
-:::
-
-#### Stacked area
-
-::: panel-tabset
-### Gráfica
-
-### Código en R
-:::
-
-### Map
-
-![](0_Figures/1_FigMap.png)
-
-### Flow
-
-![](0_Figures/1_FigFlow.png)
-
-### General knowledge
-
-![](0_Figures/1_FigGeneralKnowledge.png)
-
-## Recursos interesantes de dataviz
-
-## Teoría de conjuntos
-
-## Técnicas de conteo
-
-## Probabilidad
 
 # Módulo II: Probabilidad
 
