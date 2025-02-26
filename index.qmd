@@ -953,6 +953,12 @@ Tomado de Fundamentals of Data Visualization, Wilke (2019)
 :::
 
 
+## ¿Qué podríamos hacer combinando estadística, tecnología y nuestro conocimiento?
+::: nonincremental
+- <a href="https://quarto.org/docs/gallery/" target="_blank">Quarto Gallery</a>
+:::
+
+
 ## Lenguajes de programación
 
 ::: fragment

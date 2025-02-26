@@ -1,0 +1,31 @@
+---
+title: "Informe estadístico - Pingüinos Palmer"
+subtitle: "<b> Asignatura: </b> II4D3 - Estadística I <br>
+          <b> Profesor: </b> Ing. Sebastián Blandón Londoño <br>
+          Ingeniería Industrial <br>
+          Facultad de Ciencias Empresariales <br> 
+          <b> <i> Universidad Tecnológica de Pereira </i> </b>"
+author:
+  - name: Sebastián Blandón Londoño
+    email: s.blandon@utp.edu.co
+    url: https://www.linkedin.com/in/sebastian-blandon/
+date: today
+date-format: "DD/MM/YYYY"
+lang: es-CO
+theme:
+  light: journal
+  dark: darkly
+format:
+  html:
+    author-title: "Autor"
+    toc: true
+    toc_levels: 4
+    self-contained: true
+    code-fold: true
+    code-line-numbers: true
+execute: 
+  warning: false
+---
+
+
+
