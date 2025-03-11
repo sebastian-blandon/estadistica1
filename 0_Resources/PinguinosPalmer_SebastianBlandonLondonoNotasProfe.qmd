@@ -1,0 +1,207 @@
+---
+title: "Informe estadístico - Pingüinos Palmer"
+subtitle: "<b> Asignatura: </b> II4D3 - Estadística I <br>
+          <b> Profesor: </b> Ing. Sebastián Blandón Londoño <br>
+          Ingeniería Industrial <br>
+          Facultad de Ciencias Empresariales <br> 
+          <b> <i> Universidad Tecnológica de Pereira </i> </b>"
+author:
+  - name: Sebastián Blandón Londoño
+    email: s.blandon@utp.edu.co
+    url: https://www.linkedin.com/in/sebastian-blandon/
+date: today
+date-format: "YYYY/MM/DD"
+lang: es-CO
+theme:
+  light: journal
+  dark: darkly
+format:
+  html:
+    author-title: "Autor"
+    toc: true
+    toc_levels: 4
+    self-contained: true
+    code-fold: true
+    code-line-numbers: true
+execute: 
+  warning: false
+---
+
+
+# Preparación
+## Carga de librerías
+```{r}
+library(dplyr) # Hace parte del tidyverse, se usa para transformar datos
+library(ggplot2) # Hace parte del tidyverse, se usa para crear graficas
+library(palmerpenguins) # Tiene los datos de los pinguinos
+library(janitor) # Para limpiar los nombres del datos
+library(openxlsx) # Gestionar archivos de Microsoft Office Excel
+library(jsonlite) # Gestionar archivos json
+library(skimr)
+```
+
+## Carga de datos
+```{r}
+datos_raw <- as_tibble(palmerpenguins::penguins_raw)
+
+# forma usando pipe
+datos_raw <- datos_raw %>% 
+  clean_names()
+
+# forma sin usar pipe
+datos_raw <- clean_names(datos_raw)
+
+# Guardar en varios formatos
+## CSV
+write.csv(datos_raw, "Datos_Pinguinos.csv")
+
+## Excel
+write.xlsx(datos_raw, "Datos_Pinguinos.xlsx")
+
+## json
+write(toJSON(datos_raw, pretty = TRUE), "Datos_Pinguinos.json")
+
+
+# Limpiar nombres
+datos_raw <- datos_raw %>% 
+  clean_names() %>% 
+  rename(
+    delta_15_n = delta_15_n_o_oo,
+    delta_13_c = delta_13_c_o_oo
+  )
+```
+
+# Análisis preliminar
+## Integridad por variable
+
+**Species** 
+
+- Valores faltantes: ```r sum(is.na(datos_raw$species))```
+- Tipo de variable: ```r class(datos_raw$species)```
+
+**Region** 
+
+- Valores faltantes: ```r sum(is.na(datos_raw$region))```
+- Tipo de variable: ```r class(datos_raw$region)```
+
+**Island** 
+
+- Valores faltantes: ```r sum(is.na(datos_raw$island))```
+- Tipo de variable: ```r class(datos_raw$island)```
+
+**Stage**
+
+- Valores faltantes: ```r sum(is.na(datos_raw$stage))```
+- Tipo de variable: ```r class(datos_raw$stage)```
+
+**Individual id**
+
+- Valores faltantes: ```r sum(is.na(datos_raw$individual_id))```
+- Tipo de variable: ```r class(datos_raw$individual_id)```
+
+**Clutch completion**
+
+- Valores faltantes: ```r sum(is.na(datos_raw$clutch_completion))```
+- Tipo de variable: ```r class(datos_raw$clutch_completion)```
+
+**Date egg**
+
+- Valores faltantes: ```r sum(is.na(datos_raw$date_egg))```
+- Tipo de variable: ```r class(datos_raw$date_egg)```
+
+**Culmen length (mm)**
+
+- Valores faltantes: ```r sum(is.na(datos_raw$culmen_length_mm))```
+- Tipo de variable: ```r class(datos_raw$culmen_length_mm)```
+
+**Culmen depth (mm)**
+
+- Valores faltantes: ```r sum(is.na(datos_raw$culmen_depth_mm))```
+- Tipo de variable: ```r class(datos_raw$culmen_depth_mm)```
+
+**Flipper length (mm)**
+
+- Valores faltantes: ```r sum(is.na(datos_raw$flipper_length_mm))```
+- Tipo de variable: ```r class(datos_raw$flipper_length_mm)```
+
+**Body mass (g)**
+
+- Valores faltantes: ```r sum(is.na(datos_raw$body_mass_g))```
+- Tipo de variable: ```r class(datos_raw$body_mass_g)```
+
+**Sex**
+
+- Valores faltantes: ```r sum(is.na(datos_raw$sex))```
+- Tipo de variable: ```r class(datos_raw$sex)```
+
+**Delta 15N**
+
+- Valores faltantes: ```r sum(is.na(datos_raw$delta_15_n))```
+- Tipo de variable: ```r class(datos_raw$delta_15_n)```
+
+**Delta 13C**
+
+- Valores faltantes: ```r sum(is.na(datos_raw$delta_13_c))```
+- Tipo de variable: ```r class(datos_raw$delta_13_c)```
+
+**Comments**
+
+- Valores faltantes: ```r sum(is.na(datos_raw$comments))```
+- Tipo de variable: ```r class(datos_raw$comments)```
+
+
+## Valores de cada variable
+
+### Variables numéricas
+
+**Culmen length (mm)**
+
+- Valor mínimo: ```r min(datos_raw$culmen_length_mm, na.rm = TRUE)```
+- Valor máximo: ```r max(datos_raw$culmen_length_mm, na.rm = TRUE)```
+- Media: ```r mean(datos_raw$culmen_length_mm, na.rm = TRUE)```
+- Mediana: ```r median(datos_raw$culmen_length_mm, na.rm = TRUE)```
+- Rango: ```r max(datos_raw$culmen_length_mm, na.rm = TRUE) - min(datos_raw$culmen_length_mm, na.rm = TRUE)```
+- Desviación estándar: ```r sd(datos_raw$culmen_length_mm, na.rm = TRUE)```
+
+**Culmen depth (mm)**
+
+**Flipper length (mm)**
+
+**Body mass (g)**
+
+**Delta 15N**
+
+**Delta 13C**
+
+
+### Variables de tipo caracter
+
+**Species**
+
+- Valores únicos: ```r unique(datos_raw$species)```
+
+**Region**
+
+**Island**
+
+**Stage**
+
+**Individual id**
+
+**Clutch completion**
+
+**Sex**
+
+
+### Variables de tipo fecha
+
+**Date egg**
+
+- Valores únicos? Mínimo? Máximo?
+
+## Resumen automático
+
+```{r}
+datos_raw %>% 
+  skim()
+```

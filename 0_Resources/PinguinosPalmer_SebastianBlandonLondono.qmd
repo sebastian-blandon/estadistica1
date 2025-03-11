@@ -10,7 +10,7 @@ author:
     email: s.blandon@utp.edu.co
     url: https://www.linkedin.com/in/sebastian-blandon/
 date: today
-date-format: "DD/MM/YYYY"
+date-format: "YYYY/MM/DD"
 lang: es-CO
 theme:
   light: journal
@@ -26,6 +26,13 @@ format:
 execute: 
   warning: false
 ---
+
+
+# Preparación
+## Carga de librerías
+
+
+## Carga de datos
 
 
 
