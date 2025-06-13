@@ -42,29 +42,17 @@ library(skimr)
 
 ## Carga de datos
 ```{r}
-datos_raw <- as_tibble(palmerpenguins::penguins_raw)
-
-# forma usando pipe
-datos_raw <- datos_raw %>% 
+datos <- palmerpenguins::penguins_raw %>% 
   clean_names()
 
-# forma sin usar pipe
-datos_raw <- clean_names(datos_raw)
 
-# Guardar en varios formatos
-## CSV
-write.csv(datos_raw, "Datos_Pinguinos.csv")
+#forma sin usar pipe
 
-## Excel
-write.xlsx(datos_raw, "Datos_Pinguinos.xlsx")
 
-## json
-write(toJSON(datos_raw, pretty = TRUE), "Datos_Pinguinos.json")
 
 
 # Limpiar nombres
-datos_raw <- datos_raw %>% 
-  clean_names() %>% 
+datos <- datos %>% 
   rename(
     delta_15_n = delta_15_n_o_oo,
     delta_13_c = delta_13_c_o_oo
@@ -74,134 +62,38 @@ datos_raw <- datos_raw %>%
 # Análisis preliminar
 ## Integridad por variable
 
-**Species** 
+**species**
 
-- Valores faltantes: ```r sum(is.na(datos_raw$species))```
-- Tipo de variable: ```r class(datos_raw$species)```
+- Cantidad de valores faltantes: ```r sum(is.na(datos$species))```
+- Tipo de variable: ```r typeof(datos$species)```
 
-**Region** 
+**region**
 
-- Valores faltantes: ```r sum(is.na(datos_raw$region))```
-- Tipo de variable: ```r class(datos_raw$region)```
+- Cantidad de valores faltantes: ```r sum(is.na(datos$region))```
+- Tipo de variable: ```r typeof(datos$region)```
 
-**Island** 
+**island**
 
-- Valores faltantes: ```r sum(is.na(datos_raw$island))```
-- Tipo de variable: ```r class(datos_raw$island)```
+**stage**
 
-**Stage**
+**individual_id**
 
-- Valores faltantes: ```r sum(is.na(datos_raw$stage))```
-- Tipo de variable: ```r class(datos_raw$stage)```
+**clutch_completion**
 
-**Individual id**
+**date_egg**
 
-- Valores faltantes: ```r sum(is.na(datos_raw$individual_id))```
-- Tipo de variable: ```r class(datos_raw$individual_id)```
+**culmen_length_mm**
 
-**Clutch completion**
+**culmen_depth_mm**
 
-- Valores faltantes: ```r sum(is.na(datos_raw$clutch_completion))```
-- Tipo de variable: ```r class(datos_raw$clutch_completion)```
+**flipper_length_mm**
 
-**Date egg**
+**body_mass_g**
 
-- Valores faltantes: ```r sum(is.na(datos_raw$date_egg))```
-- Tipo de variable: ```r class(datos_raw$date_egg)```
+**sex**
 
-**Culmen length (mm)**
+**delta_15_n**
 
-- Valores faltantes: ```r sum(is.na(datos_raw$culmen_length_mm))```
-- Tipo de variable: ```r class(datos_raw$culmen_length_mm)```
+**delta_13_c**
 
-**Culmen depth (mm)**
-
-- Valores faltantes: ```r sum(is.na(datos_raw$culmen_depth_mm))```
-- Tipo de variable: ```r class(datos_raw$culmen_depth_mm)```
-
-**Flipper length (mm)**
-
-- Valores faltantes: ```r sum(is.na(datos_raw$flipper_length_mm))```
-- Tipo de variable: ```r class(datos_raw$flipper_length_mm)```
-
-**Body mass (g)**
-
-- Valores faltantes: ```r sum(is.na(datos_raw$body_mass_g))```
-- Tipo de variable: ```r class(datos_raw$body_mass_g)```
-
-**Sex**
-
-- Valores faltantes: ```r sum(is.na(datos_raw$sex))```
-- Tipo de variable: ```r class(datos_raw$sex)```
-
-**Delta 15N**
-
-- Valores faltantes: ```r sum(is.na(datos_raw$delta_15_n))```
-- Tipo de variable: ```r class(datos_raw$delta_15_n)```
-
-**Delta 13C**
-
-- Valores faltantes: ```r sum(is.na(datos_raw$delta_13_c))```
-- Tipo de variable: ```r class(datos_raw$delta_13_c)```
-
-**Comments**
-
-- Valores faltantes: ```r sum(is.na(datos_raw$comments))```
-- Tipo de variable: ```r class(datos_raw$comments)```
-
-
-## Valores de cada variable
-
-### Variables numéricas
-
-**Culmen length (mm)**
-
-- Valor mínimo: ```r min(datos_raw$culmen_length_mm, na.rm = TRUE)```
-- Valor máximo: ```r max(datos_raw$culmen_length_mm, na.rm = TRUE)```
-- Media: ```r mean(datos_raw$culmen_length_mm, na.rm = TRUE)```
-- Mediana: ```r median(datos_raw$culmen_length_mm, na.rm = TRUE)```
-- Rango: ```r max(datos_raw$culmen_length_mm, na.rm = TRUE) - min(datos_raw$culmen_length_mm, na.rm = TRUE)```
-- Desviación estándar: ```r sd(datos_raw$culmen_length_mm, na.rm = TRUE)```
-
-**Culmen depth (mm)**
-
-**Flipper length (mm)**
-
-**Body mass (g)**
-
-**Delta 15N**
-
-**Delta 13C**
-
-
-### Variables de tipo caracter
-
-**Species**
-
-- Valores únicos: ```r unique(datos_raw$species)```
-
-**Region**
-
-**Island**
-
-**Stage**
-
-**Individual id**
-
-**Clutch completion**
-
-**Sex**
-
-
-### Variables de tipo fecha
-
-**Date egg**
-
-- Valores únicos? Mínimo? Máximo?
-
-## Resumen automático
-
-```{r}
-datos_raw %>% 
-  skim()
-```
+**comments**

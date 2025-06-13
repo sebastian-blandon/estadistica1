@@ -16,6 +16,7 @@ theme:
   light: journal
   dark: darkly
 format:
+  docx: default
   html:
     author-title: "Autor"
     toc: true
